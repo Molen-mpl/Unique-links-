@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/*split screens-----------------------*/
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.left {
+  background-color: #fcfbf3;
+}
+
+.right {
+  right: 0;
+  background-color: #04da8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*split screens END-----------------------*/
+
+/*LEFT SCREEN-----------------------*/
+
+header {
+  background-color: rgba(28, 28, 28, 1);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+header h1 {
+  letter-spacing: -0.36px;
+  font-weight: 500;
+}
+
+header img {
+  margin-right: 10px;
+  height: 36px;
+  width: 144px;
+}
+
+.tool-description {
+  background-color: #04da8d;
+  padding: 40px;
+  color: #1c1c1c;
+}
+
+.tool-description h3,
+p {
+  margin: 0 90px;
+}
+
+.tool-description h3 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.36px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.tool-description p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.176px;
+  line-height: 140%;
+}
+
+.centered-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.generateUniqueLink {
+  border: 1px solid #d7d7d7;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px 24px;
+  width: 50%;
+  color: #1c1c1c;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  box-shadow: 0 0 10px #d7d7d7;
+}
+
+.generateUniqueLink input {
+  color: #1c1c1c;
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 12px;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+}
+
+.generateUniqueLink select {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  margin: 12px 0;
+  resize: none;
+}
+
+.btn {
+  background-color: #205cd4;
+  border: 1px solid transparent;
+  border-radius: 99px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: box-shadow 150ms linear 0s, background-color 150ms linear 0s;
+}
+
+.btn:hover {
+  background-color: rgb(17, 54, 131);
+}
+
+.btn:active {
+  background-color: rgb(10, 32, 77);
+  transform: translateY(1px);
+  box-shadow: 0 0 5px rgb(17, 54, 131);
+}
+
+/*LEFT SCREEN END-----------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+/*RIGHT SCREEN-----------------------*/
+.centered-right {
+  padding: 30px 0;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.codeRed {
+  color: #000000;
+  width: 300px;
+}

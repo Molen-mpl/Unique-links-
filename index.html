@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unique Links</title>
+  </head>
+  <body>
+    <div class="split left">
+      <header>
+        <h1>Generate Unique Links</h1>
+        <img
+          src="Logos/Trustpilot_brandmark_gr-wht_RGB-144x36-M.png"
+          alt="Trustpilot logo"
+        />
+      </header>
+
+      <section class="tool-description">
+        <h3>Brief description of tool:</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim culpa
+          nam mollitia ad possimus eaque quo, corrupti consectetur obcaecati in
+          explicabo aliquam. Ea qui voluptatibus in fuga sed optio nostrum?
+        </p>
+      </section>
+
+      <div class="centered-left">
+        <div class="generateUniqueLink">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" value="<?!=email?>" />
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value="<?!=name?>" />
+
+          <label for="referenceNumber">Reference Number:</label>
+          <input
+            type="text"
+            id="referenceNumber"
+            name="referenceNumber"
+            value="<?!=referenceNumber?>"
+          />
+
+          <label for="secret">Secret:</label>
+          <input type="text" id="secret" name="secret" value="<?!=secret?>" />
+
+          <label for="domain">Domain:</label>
+          <input type="text" id="domain" name="domain" value="<?!=domain?>" />
+
+          <label for="domain">Landing page:</label><br />
+          <select class="codeRed" id="mySelect" name="landingPage">
+            <option value="www.trustpilot.com">www.trustpilot.com</option>
+            <option value="at.trustpilot.com">at.trustpilot.com</option>
+            <option value="au.trustpilot.com">au.trustpilot.com</option>
+            <option value="br.trustpilot.com">br.trustpilot.com</option>
+            <option value="ca.trustpilot.com">ca.trustpilot.com</option>
+            <option value="ch.trustpilot.com">ch.trustpilot.com</option>
+            <option value="cn.trustpilot.com">cn.trustpilot.com</option>
+            <option value="de.trustpilot.com">de.trustpilot.com</option>
+            <option value="dk.trustpilot.com">dk.trustpilot.com</option>
+            <option value="es.trustpilot.com">es.trustpilot.com</option>
+            <option value="fi.trustpilot.com">fi.trustpilot.com</option>
+            <option value="fr.trustpilot.com">fr.trustpilot.com</option>
+            <option value="fr-be.trustpilot.com">fr-be.trustpilot.com</option>
+            <option value="ie.trustpilot.com">ie.trustpilot.com</option>
+            <option value="it.trustpilot.com">it.trustpilot.com</option>
+            <option value="jp.trustpilot.com">jp.trustpilot.com</option>
+            <option value="nl.trustpilot.com">nl.trustpilot.com</option>
+            <option value="nl-be.trustpilot.com">nl-be.trustpilot.com</option>
+            <option value="no.trustpilot.com">no.trustpilot.com</option>
+            <option value="nz.trustpilot.com">nz.trustpilot.com</option>
+            <option value="pl.trustpilot.com">pl.trustpilot.com</option>
+            <option value="pt.trustpilot.com">pt.trustpilot.com</option>
+            <option value="ru.trustpilot.com">ru.trustpilot.com</option>
+            <option value="se.trustpilot.com">se.trustpilot.com</option>
+            <option value="uk.trustpilot.com">uk.trustpilot.com</option></select
+          ><br />
+
+          <label for="sha">SHA:</label>
+          <input type="text" id="sha" name="sha" />
+
+          <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+
+          <button class="btn" value="Generate unique link" onclick="addText()">
+            Generate Unique Link
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="centered-right">
+        <div id="embedIframe">
+          <h2>Iframe</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
